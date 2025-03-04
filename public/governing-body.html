@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governing Body - Crime Investigation Bureau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Important Notice Bar -->
+    <div class="bg-red-700 text-white py-2">
+        <div class="container mx-auto px-4">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                <i class="fas fa-exclamation-circle"></i>
+                Important Notice : We have received information about fake websites impersonating CIB. Please verify our official domain.
+                <span class="mx-8">|</span>
+                Contact: +91 97925-80000
+            </marquee>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-3xl text-blue-700 mr-3"></i>
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-gray-800">Crime Investigation Bureau</h1>
+                        <p class="text-sm text-gray-600">(An ISO 9001:2015 Certified Organization)</p>
+                        <p class="text-xs text-gray-500">ESTD. 2011</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-4 md:mt-0 gap-4">
+                    <div class="hidden md:flex items-center bg-gray-100 rounded-lg">
+                        <input type="text" placeholder="Officer Verification" class="bg-transparent px-4 py-2 outline-none">
+                        <button class="bg-blue-700 text-white px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="bg-red-700 text-white px-6 py-2 rounded-lg hover:bg-red-800 transition-colors">
+                        Join CIB
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-blue-900">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+                <button class="md:hidden text-white p-4" onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="hidden md:flex">
+                    <a href="/" class="text-white px-4 py-4 hover:bg-blue-800">Home</a>
+                    <a href="/about.html" class="text-white px-4 py-4 hover:bg-blue-800">About Us</a>
+                    <a href="/services.html" class="text-white px-4 py-4 hover:bg-blue-800">Services</a>
+                    <a href="/governing-body.html" class="text-white px-4 py-4 bg-blue-800">Governing Body</a>
+                    <a href="/your-rights.html" class="text-white px-4 py-4 hover:bg-blue-800">Your Rights</a>
+                    <a href="/grievance.html" class="text-white px-4 py-4 hover:bg-blue-800">Public Grievance Cell</a>
+                    <a href="/gallery.html" class="text-white px-4 py-4 hover:bg-blue-800">Gallery</a>
+                    <a href="/indian-laws.html" class="text-white px-4 py-4 hover:bg-blue-800">Indian Laws</a>
+                    <a href="/activities.html" class="text-white px-4 py-4 hover:bg-blue-800">Our Activity</a>
+                    <a href="/contact.html" class="text-white px-4 py-4 hover:bg-blue-800">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="/" class="block text-white px-4 py-2 hover:bg-blue-800">Home</a>
+            <a href="/about.html" class="block text-white px-4 py-2 hover:bg-blue-800">About Us</a>
+            <a href="/services.html" class="block text-white px-4 py-2 hover:bg-blue-800">Services</a>
+            <a href="/governing-body.html" class="block text-white px-4 py-2 bg-blue-800">Governing Body</a>
+            <a href="/your-rights.html" class="block text-white px-4 py-2 hover:bg-blue-800">Your Rights</a>
+            <a href="/grievance.html" class="block text-white px-4 py-2 hover:bg-blue-800">Public Grievance Cell</a>
+            <a href="/gallery.html" class="block text-white px-4 py-2 hover:bg-blue-800">Gallery</a>
+            <a href="/indian-laws.html" class="block text-white px-4 py-2 hover:bg-blue-800">Indian Laws</a>
+            <a href="/activities.html" class="block text-white px-4 py-2 hover:bg-blue-800">Our Activity</a>
+            <a href="/contact.html" class="block text-white px-4 py-2 hover:bg-blue-800">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Governing Body</h1>
+            <p class="mt-2 text-gray-600">Meet our leadership team and governing members</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Executive Committee -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8">Executive Committee</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Director General -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <img src="https://via.placeholder.com/128" alt="Director General" class="rounded-full">
+                        <div class="absolute bottom-0 right-0 bg-blue-600 text-white p-2 rounded-full">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold">Dr. Rajesh Kumar</h3>
+                    <p class="text-blue-600 font-medium">Director General</p>
+                    <p class="mt-2 text-gray-600">30+ years of experience in criminal investigation</p>
+                </div>
+
+                <!-- Additional Director -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <img src="https://via.placeholder.com/128" alt="Additional Director" class="rounded-full">
+                        <div class="absolute bottom-0 right-0 bg-blue-600 text-white p-2 rounded-full">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold">Mrs. Priya Singh</h3>
+                    <p class="text-blue-600 font-medium">Additional Director</p>
+                    <p class="mt-2 text-gray-600">Expert in cybercrime investigation</p>
+                </div>
+
+                <!-- Joint Director -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <img src="https://via.placeholder.com/128" alt="Joint Director" class="rounded-full">
+                        <div class="absolute bottom-0 right-0 bg-blue-600 text-white p-2 rounded-full">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold">Mr. Amit Patel</h3>
+                    <p class="text-blue-600 font-medium">Joint Director</p>
+                    <p class="mt-2 text-gray-600">Specialized in financial crime investigation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advisory Board -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8">Advisory Board</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Board Members -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="font-semibold">Dr. Sarah Johnson</h3>
+                    <p class="text-gray-600">Forensic Science Expert</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="font-semibold">Prof. M.K. Sharma</h3>
+                    <p class="text-gray-600">Criminal Law Expert</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="font-semibold">Dr. Arun Verma</h3>
+                    <p class="text-gray-600">Cybersecurity Specialist</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="font-semibold">Ms. Lisa Chen</h3>
+                    <p class="text-gray-600">International Relations</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizational Structure -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-900 mb-8">Organizational Structure</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="max-w-3xl mx-auto">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-center bg-blue-100 p-4 rounded-lg">
+                            <span class="font-semibold">Director General</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-blue-50 p-4 rounded-lg text-center">
+                                <span class="font-semibold">Additional Director (Operations)</span>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg text-center">
+                                <span class="font-semibold">Additional Director (Administration)</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                                <span>Joint Director (Investigation)</span>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                                <span>Joint Director (Technical)</span>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                                <span>Joint Director (Training)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About CIB</h3>
+                    <p class="text-gray-400">
+                        Crime Investigation Bureau is dedicated to maintaining law and order through professional investigation and crime prevention.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="/services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="/grievance.html" class="text-gray-400 hover:text-white">Grievance Cell</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt w-6"></i>
+                            <span class="text-gray-400">123 Investigation Ave, New Delhi</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone w-6"></i>
+                            <span class="text-gray-400">+91 97925-80000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope w-6"></i>
+                            <span class="text-gray-400">contact@cib.gov.in</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-400">&copy; 2024 Crime Investigation Bureau. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.mobile-menu') && !event.target.closest('.mobile-menu-button')) {
+                document.querySelector('.mobile-menu').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
