@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Laws - Crime Investigation Bureau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-pattern {
+            background-color: #1a365d;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232d4a77' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .law-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .law-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-2xl text-blue-700 mr-2"></i>
+                        <span class="font-bold text-xl text-gray-800">CIB</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="/" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="/about.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">About</a>
+                    <a href="/services.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Services</a>
+                    <a href="/gallery.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Gallery</a>
+                    <a href="/activities.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Activities</a>
+                    <a href="/indian-laws.html" class="text-blue-600 px-3 py-2 rounded-md font-medium">Indian Laws</a>
+                    <a href="/contact.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-800 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="/" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Home</a>
+            <a href="/about.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">About</a>
+            <a href="/services.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Services</a>
+            <a href="/gallery.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Gallery</a>
+            <a href="/activities.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Activities</a>
+            <a href="/indian-laws.html" class="block bg-blue-600 text-white px-4 py-2 font-medium">Indian Laws</a>
+            <a href="/contact.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-pattern py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
+                    Indian Laws
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Understanding the legal framework that governs criminal investigation in India
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto">
+                <div class="mt-1 relative rounded-md shadow-sm">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fas fa-search text-gray-400"></i>
+                    </div>
+                    <input type="text" name="search" id="search" 
+                        class="focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 pr-12 py-3 sm:text-sm border-gray-300 rounded-md" 
+                        placeholder="Search laws, acts, or sections...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laws Content -->
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Criminal Law Section -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Criminal Laws</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- IPC Card -->
+                    <div class="law-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <i class="fas fa-gavel text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold text-gray-900">Indian Penal Code</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Comprehensive code defining criminal offenses and their punishments in India.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Criminal offenses classification</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Punishment guidelines</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Legal procedures</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- CrPC Card -->
+                    <div class="law-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-balance-scale text-green-600 text-xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold text-gray-900">Criminal Procedure Code</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Procedural law for administration of substantive criminal law in India.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                    <span>Investigation procedures</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                    <span>Trial process</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                    <span>Court proceedings</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Evidence Act Card -->
+                    <div class="law-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center">
+                                    <i class="fas fa-file-alt text-purple-600 text-xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold text-gray-900">Indian Evidence Act</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Rules and regulations regarding admissibility of evidence in courts.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                    <span>Evidence types</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                    <span>Admissibility rules</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                    <span>Witness testimony</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Laws Section -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Special Laws</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- POCSO Act -->
+                    <div class="law-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center">
+                                    <i class="fas fa-child text-red-600 text-xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold text-gray-900">POCSO Act</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Protection of Children from Sexual Offences Act, 2012.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-red-600 mt-1 mr-2"></i>
+                                    <span>Child protection laws</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-red-600 mt-1 mr-2"></i>
+                                    <span>Special procedures</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-red-600 mt-1 mr-2"></i>
+                                    <span>Punishment provisions</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- IT Act -->
+                    <div class="law-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center">
+                                    <i class="fas fa-laptop-code text-yellow-600 text-xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold text-gray-900">IT Act</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Information Technology Act governing cyber crimes and electronic evidence.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Cybercrime provisions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Digital evidence</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Online security</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- NDPS Act -->
+                    <div class="law-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="h-12 w-12 rounded-full bg-pink-100 flex items-center justify-center">
+                                    <i class="fas fa-pills text-pink-600 text-xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold text-gray-900">NDPS Act</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Narcotic Drugs and Psychotropic Substances Act.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-pink-600 mt-1 mr-2"></i>
+                                    <span>Drug control</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-pink-600 mt-1 mr-2"></i>
+                                    <span>Investigation powers</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-pink-600 mt-1 mr-2"></i>
+                                    <span>Seizure procedures</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                    <div class="text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> 123 Investigation Ave</p>
+                        <p><i class="fas fa-phone mr-2"></i> +1 234 567 890</p>
+                        <p><i class="fas fa-envelope mr-2"></i> contact@cib.gov</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="text-gray-300">
+                        <li class="mb-2"><a href="/about.html" class="hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="/services.html" class="hover:text-white">Services</a></li>
+                        <li class="mb-2"><a href="/gallery.html" class="hover:text-white">Gallery</a></li>
+                        <li class="mb-2"><a href="/contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Crime Investigation Bureau. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.mobile-menu') && !event.target.closest('.mobile-menu-button')) {
+                document.querySelector('.mobile-menu').classList.add('hidden');
+            }
+        });
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function(e) {
+            // Add search logic here
+            console.log('Searching for:', e.target.value);
+        });
+    </script>
+</body>
+</html>
