@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Crime Investigation Bureau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-pattern {
+            background-color: #1a365d;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232d4a77' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-2xl text-blue-700 mr-2"></i>
+                        <span class="font-bold text-xl text-gray-800">CIB</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="/" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="/about.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">About</a>
+                    <a href="/services.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Services</a>
+                    <a href="/gallery.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Gallery</a>
+                    <a href="/activities.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Activities</a>
+                    <a href="/contact.html" class="text-blue-600 px-3 py-2 rounded-md font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-800 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="/" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Home</a>
+            <a href="/about.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">About</a>
+            <a href="/services.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Services</a>
+            <a href="/gallery.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Gallery</a>
+            <a href="/activities.html" class="block text-gray-800 hover:bg-blue-600 hover:text-white px-4 py-2 font-medium">Activities</a>
+            <a href="/contact.html" class="block bg-blue-600 text-white px-4 py-2 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-pattern py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
+                    Contact Us
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Get in touch with our team for inquiries and assistance
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">Get in Touch</h2>
+                        <p class="mt-4 text-lg text-gray-600">
+                            Have questions or need assistance? Our team is here to help. Contact us through any of the following methods.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Office Location</h3>
+                                <p class="mt-2 text-gray-600">
+                                    123 Investigation Avenue<br>
+                                    New Delhi, 110001<br>
+                                    India
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Phone Numbers</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Main Office: +91 11 2345 6789<br>
+                                    Helpline: 1800-123-4567<br>
+                                    Emergency: 112
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Email Addresses</h3>
+                                <p class="mt-2 text-gray-600">
+                                    General Inquiries: info@cib.gov.in<br>
+                                    Support: support@cib.gov.in<br>
+                                    Press: media@cib.gov.in
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Working Hours</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                    Saturday: 9:00 AM - 1:00 PM<br>
+                                    Emergency Services: 24/7
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-lg p-8 contact-form">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-0 sm:text-sm">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-0 sm:text-sm">
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-0 sm:text-sm">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-0 sm:text-sm">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-0 sm:text-sm"></textarea>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input type="checkbox" id="privacy" name="privacy" required
+                                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <label for="privacy" class="ml-2 block text-sm text-gray-700">
+                                I agree to the privacy policy and terms of service
+                            </label>
+                        </div>
+
+                        <div>
+                            <button type="submit"
+                                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Location</h2>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <!-- Replace with actual map embed code -->
+                        <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-500">Map will be embedded here</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                    <div class="text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> 123 Investigation Ave</p>
+                        <p><i class="fas fa-phone mr-2"></i> +1 234 567 890</p>
+                        <p><i class="fas fa-envelope mr-2"></i> contact@cib.gov</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="text-gray-300">
+                        <li class="mb-2"><a href="/about.html" class="hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="/services.html" class="hover:text-white">Services</a></li>
+                        <li class="mb-2"><a href="/gallery.html" class="hover:text-white">Gallery</a></li>
+                        <li class="mb-2"><a href="/contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Crime Investigation Bureau. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.mobile-menu') && !event.target.closest('.mobile-menu-button')) {
+                document.querySelector('.mobile-menu').classList.add('hidden');
+            }
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form submission logic here
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
