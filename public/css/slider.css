@@ -1,0 +1,120 @@
+/* Hero Slider */
+.hero-slider {
+    @apply relative w-full;
+}
+
+.hero-slider .swiper-slide {
+    @apply relative overflow-hidden;
+}
+
+.hero-slider .swiper-slide img {
+    @apply w-full h-full object-cover transform scale-105 transition-transform duration-700;
+}
+
+.hero-slider .swiper-slide:hover img {
+    @apply scale-100;
+}
+
+.hero-slider .slide-content {
+    @apply opacity-0 transform translate-y-4 transition-all duration-700;
+}
+
+.hero-slider .swiper-slide-active .slide-content {
+    @apply opacity-100 translate-y-0;
+}
+
+/* Slider Navigation */
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+    @apply w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300;
+}
+
+.hero-slider .swiper-button-next:hover,
+.hero-slider .swiper-button-prev:hover {
+    @apply bg-secondary text-white;
+}
+
+.hero-slider .swiper-button-next::after,
+.hero-slider .swiper-button-prev::after {
+    @apply text-xl font-bold;
+}
+
+/* Slider Pagination */
+.hero-slider .swiper-pagination {
+    @apply bottom-6;
+}
+
+.hero-slider .swiper-pagination-bullet {
+    @apply w-2.5 h-2.5 bg-white/50 transition-all duration-300;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+    @apply w-8 bg-secondary rounded-full;
+}
+
+/* Slide Content Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-in {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Slide Background Gradient */
+.slide-gradient {
+    @apply absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent;
+}
+
+/* Slide Content Styles */
+.slide-content h2 {
+    @apply text-4xl md:text-5xl font-bold leading-tight mb-4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slide-content p {
+    @apply text-lg md:text-xl opacity-90 mb-8;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.slide-content .btn-primary,
+.slide-content .btn-secondary {
+    @apply transform hover:-translate-y-0.5 transition-transform duration-300;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-slider {
+        @apply h-[500px];
+    }
+
+    .hero-slider .swiper-button-next,
+    .hero-slider .swiper-button-prev {
+        @apply w-10 h-10;
+    }
+
+    .hero-slider .swiper-button-next::after,
+    .hero-slider .swiper-button-prev::after {
+        @apply text-base;
+    }
+
+    .slide-content h2 {
+        @apply text-3xl;
+    }
+
+    .slide-content p {
+        @apply text-base;
+    }
+}
+
+/* Fade Effect */
+.swiper-fade .swiper-slide {
+    @apply transition-opacity duration-700;
+}
