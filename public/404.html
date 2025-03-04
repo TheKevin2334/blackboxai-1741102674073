@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | CIB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#1a365d',
+                            light: '#2c4c7c',
+                            dark: '#122844'
+                        },
+                        secondary: {
+                            DEFAULT: '#c41e3a',
+                            light: '#d43353',
+                            dark: '#a11830'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <a href="/" class="flex items-center space-x-4">
+                    <img src="/images/logo.svg" alt="CIB Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">Crime Investigation Bureau</h1>
+                        <p class="text-sm text-gray-600">Professional Investigation Services</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 404 Content -->
+    <main class="flex-grow container mx-auto px-4 py-16">
+        <div class="max-w-2xl mx-auto text-center">
+            <div class="mb-8 text-primary">
+                <i class="fas fa-search text-8xl"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Page Not Found</h2>
+            <p class="text-gray-600 text-lg mb-8">
+                The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+            </p>
+            <div class="space-y-4">
+                <a href="/" class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-colors">
+                    <i class="fas fa-home mr-2"></i>Return to Homepage
+                </a>
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="/contact" class="text-primary hover:text-primary-dark transition-colors">
+                        <i class="fas fa-headset mr-1"></i>Contact Us
+                    </a>
+                    <a href="/services" class="text-primary hover:text-primary-dark transition-colors">
+                        <i class="fas fa-list-alt mr-1"></i>Our Services
+                    </a>
+                    <a href="/grievance" class="text-primary hover:text-primary-dark transition-colors">
+                        <i class="fas fa-file-alt mr-1"></i>File a Complaint
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-6 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm">
+                    © 2024 Crime Investigation Bureau. All rights reserved.
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="/contact" class="hover:text-secondary transition-colors">Emergency Contact</a>
+                    <a href="/about" class="hover:text-secondary transition-colors">About CIB</a>
+                    <a href="/privacy-policy" class="hover:text-secondary transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
