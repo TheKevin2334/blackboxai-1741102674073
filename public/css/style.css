@@ -1,0 +1,209 @@
+/* Mobile Menu */
+.mobile-menu {
+    @apply fixed inset-0 bg-gradient-to-b from-primary to-primary-dark z-50 transform transition-all duration-300 ease-in-out;
+}
+
+.mobile-menu.hidden {
+    @apply -translate-x-full;
+}
+
+.mobile-menu-header {
+    @apply bg-primary-dark border-b border-white/10;
+}
+
+.mobile-menu-close {
+    @apply text-white/80 hover:text-white transition-colors text-2xl;
+}
+
+/* Mobile Menu Links */
+.mobile-menu-link {
+    @apply flex items-center w-full px-6 py-4 text-white/90 hover:text-white transition-colors text-base font-medium;
+}
+
+.mobile-menu-link.active {
+    @apply bg-white/10 text-white;
+}
+
+.mobile-menu-link i {
+    @apply mr-3 text-lg opacity-80 group-hover:opacity-100;
+}
+
+/* Mobile Dropdown */
+.mobile-dropdown {
+    @apply relative;
+}
+
+.mobile-dropdown > a {
+    @apply w-full flex justify-between items-center pr-4;
+}
+
+.mobile-dropdown svg {
+    @apply transition-transform duration-300 ease-in-out;
+}
+
+.mobile-dropdown.active svg {
+    @apply rotate-180;
+}
+
+/* Mobile Submenu */
+.mobile-submenu {
+    @apply overflow-hidden bg-primary-dark/50 backdrop-blur-sm;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-submenu:not(.hidden) {
+    max-height: 500px;
+}
+
+.mobile-submenu-link {
+    @apply flex items-center w-full px-8 py-3 text-white/80 hover:text-white hover:bg-white/5 transition-all duration-200;
+}
+
+.mobile-submenu-link i {
+    @apply mr-3 text-base opacity-70 group-hover:opacity-100;
+}
+
+/* Mobile Menu Button */
+#mobileMenuBtn {
+    @apply flex items-center gap-2 px-4 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-lg transition-all duration-300;
+}
+
+#mobileMenuBtn:hover {
+    @apply shadow-lg transform -translate-y-0.5;
+}
+
+#mobileMenuBtn i {
+    @apply transition-transform duration-300;
+}
+
+#mobileMenuBtn:hover i {
+    @apply rotate-90;
+}
+
+/* Navigation Container */
+.nav-container {
+    @apply bg-primary text-white border-t border-white/10;
+}
+
+.nav-wrapper {
+    @apply container mx-auto px-4;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    @apply hidden lg:flex items-center space-x-1;
+}
+
+.nav-item {
+    @apply relative;
+}
+
+.nav-link-light {
+    @apply flex items-center px-4 py-4 text-white/90 hover:text-white hover:bg-white/5 transition-all duration-200 text-sm font-medium;
+}
+
+.nav-link-light.active {
+    @apply text-white bg-white/10;
+}
+
+.nav-link-light i {
+    @apply mr-2 text-base opacity-80 group-hover:opacity-100 transition-opacity;
+}
+
+.nav-dropdown-icon {
+    @apply w-4 h-4 ml-1.5 opacity-70 transition-transform duration-300;
+}
+
+.group:hover .nav-dropdown-icon {
+    @apply rotate-180;
+}
+
+/* Dropdown Menu */
+.nav-dropdown {
+    @apply absolute left-0 mt-0 w-64 bg-white rounded-b-lg shadow-lg py-2 opacity-0 invisible transform -translate-y-2 transition-all duration-300 z-50;
+}
+
+.group:hover .nav-dropdown {
+    @apply opacity-100 visible translate-y-0;
+}
+
+.submenu-link {
+    @apply flex items-center w-full px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors;
+}
+
+.submenu-link i {
+    @apply mr-2.5 text-gray-500;
+}
+
+/* Emergency Contact Button */
+.emergency-contact {
+    @apply flex items-center justify-center space-x-3 bg-secondary hover:bg-secondary-dark text-white rounded-xl p-4 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+}
+
+/* Search Box */
+.search-box {
+    @apply flex items-center bg-white/10 rounded-xl overflow-hidden backdrop-blur-sm shadow-lg transition-all duration-300;
+}
+
+.search-box:focus-within {
+    @apply ring-2 ring-white/30;
+}
+
+.search-box input {
+    @apply flex-1 bg-transparent text-white px-5 py-4 text-base placeholder-white/70 focus:outline-none;
+}
+
+.search-box button {
+    @apply bg-secondary hover:bg-secondary-dark text-white px-8 py-4 transition-colors;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-in {
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    padding-left: 100%;
+}
+
+/* Utility Classes */
+.backdrop-blur {
+    backdrop-filter: blur(8px);
+}
+
+/* Responsive Containers */
+.container {
+    @apply px-4 mx-auto;
+    max-width: 1280px;
+}
+
+@screen sm {
+    .container {
+        @apply px-6;
+    }
+}
+
+@screen lg {
+    .container {
+        @apply px-8;
+    }
+}
